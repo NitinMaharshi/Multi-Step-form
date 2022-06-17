@@ -175,7 +175,7 @@ function getStepContent(step) {
   }
 }
 
-const LinaerStepper = () => {
+const Form = () => {
   const { loading, todos, error } = useSelector(
     (state) => ({
       loading: state.loading,
@@ -186,7 +186,6 @@ const LinaerStepper = () => {
   );
   const dispatch = useDispatch();
 
-  // const classes = useStyles();
   const methods = useForm({
     defaultValues: {
       firstName: "",
@@ -200,10 +199,6 @@ const LinaerStepper = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [skippedSteps, setSkippedSteps] = useState([]);
   const steps = getSteps();
-
-  const isStepOptional = (step) => {
-    return step === 1 || step === 2;
-  };
 
   const isStepSkipped = (step) => {
     return skippedSteps.includes(step);
@@ -284,13 +279,6 @@ const LinaerStepper = () => {
     setActiveStep(activeStep - 1);
   };
 
-  const handleSkip = () => {
-    if (!isStepSkipped(activeStep)) {
-      setSkippedSteps([...skippedSteps, activeStep]);
-    }
-    setActiveStep(activeStep + 1);
-  };
-
   return (
     <div>
       <Navbar />
@@ -368,4 +356,4 @@ const LinaerStepper = () => {
   );
 };
 
-export default LinaerStepper;
+export default Form;

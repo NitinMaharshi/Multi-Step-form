@@ -1,4 +1,3 @@
-import LinearStepper from "./Components/LinearStepper";
 import { CssBaseline, Container, Paper, Box } from "@material-ui/core";
 import Router from "./Router/Router";
 
