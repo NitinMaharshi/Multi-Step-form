@@ -1,0 +1,26 @@
+{
+  "form": [
+    {
+      "firstName": "Nitin",
+      "lastName": "Maharashi",
+      "emailAddress": "eve.holt@reqres.in",
+      "address1": "",
+      "address2": "",
+      "dob": "2022-06-01",
+      "password": "Ram@789123",
+      "confirmpassword": "Ram@789123",
+      "id": 1
+    },
+    {
+      "firstName": "Nitin",
+      "lastName": "Maharashi",
+      "emailAddress": "nitin77n@gmail.com",
+      "address1": "",
+      "address2": "",
+      "dob": "2022-06-01",
+      "password": "Ram@789123",
+      "confirmpassword": "Ram@789123",
+      "id": 2
+    }
+  ]
+}
